@@ -1,0 +1,13 @@
+message scopeMsgServerRes {
+    
+    enum scopeMsgIdRes {
+       SCOPE_MSGID_DUMMY_RES = 0; 
+       SCOPE_MSGID_REGISTER_RES = 1;
+       SCOPE_MSGID_UNREGISTER_RES = 2;
+    }
+
+    required scopeMsgIdRes id = 1;
+    required int32 device_id = 2;
+    optional int32 payload_flags = 3;
+    optional bytes payload_data = 4;
+}

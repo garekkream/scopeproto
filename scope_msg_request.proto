@@ -1,0 +1,13 @@
+message scopeMsgClientReq {
+
+    enum scopeMsgIdReq {
+        SCOPE_MSGID_DUMMY_REQ = 0;        
+        SCOPE_MSGID_REGISTER_REQ = 1;
+        SCOPE_MSGID_UNREGISTER_REQ = 2;
+    }
+
+    required scopeMsgIdReq msg_id = 1;
+    required int32 device_id = 2;
+    optional int32 payload_flags = 3;
+    optional bytes payload_data = 4;
+}

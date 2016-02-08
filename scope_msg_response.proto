@@ -6,6 +6,10 @@ message scopeMsgServerRes {
        SCOPE_MSGID_UNREGISTER_RES = 2;
     }
 
+    enum scopeRegisterFlagsRes {
+        SERVER_SW_VER = 1;    
+    }
+
     required scopeMsgIdRes id = 1;
     required int32 device_id = 2;
     optional int32 payload_flags = 3;

@@ -6,6 +6,11 @@ message scopeMsgClientReq {
         SCOPE_MSGID_UNREGISTER_REQ = 2;
     }
 
+    enum scopeRegisterFlagsReq {
+        CLIENT_SW_VER = 1;
+        CLIENT_NAME = 2;
+    }
+
     required scopeMsgIdReq msg_id = 1;
     required int32 device_id = 2;
     optional int32 payload_flags = 3;

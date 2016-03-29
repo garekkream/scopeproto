@@ -1,6 +1,4 @@
 CMakeFiles
 Makefile
 cmake_install.cmake
-scope_msg*.c
-scope_msg*.h
 *.a
